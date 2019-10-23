@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1027656522600",
+    "firebase_url": "https://jobfounder-9383d.firebaseio.com",
+    "project_id": "jobfounder-9383d",
+    "storage_bucket": "jobfounder-9383d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027656522600:android:1e858e0cc9e47772a514dd",
+        "android_client_info": {
+          "package_name": "com.example.jobfounder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027656522600-j1qkohfkh02o7esettndu6ncb5csfafm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobfounder",
+            "certificate_hash": "d8cb68f7d5cfcf9570422fee5d016e7068c1ddf5"
+          }
+        },
+        {
+          "client_id": "1027656522600-sunvjvvl3fre1cljqua0b4m3e1lmnkge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLm60ahcBJUBzMJY0I_HA09A8ncT_UcWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027656522600-sunvjvvl3fre1cljqua0b4m3e1lmnkge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
