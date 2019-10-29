@@ -32,7 +32,7 @@ public class SplashScreen extends AppCompatActivity {
         if(currentUser != null) {
             startActivity(new Intent(this, MainActivity.class));
         } else {
-            startActivity(new Intent(this, SignActivity.class));
+            startActivity(new Intent(this, PhoneAuthActivity.class));
         }
     }
 }

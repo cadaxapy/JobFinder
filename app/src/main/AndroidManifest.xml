@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.jobfounder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -11,8 +18,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:theme="@style/NoActionBar" android:name=".SignUpActivity"></activity>
-        <activity android:theme="@style/NoActionBar" android:name=".SignActivity" />
+        <activity android:name=".DetailsActivity"></activity>
+        <activity
+            android:name=".UpdateUserInfoActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".VerifyPhoneActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".PhoneAuthActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SignActivity"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".SplashScreen"
             android:noHistory="true"
@@ -23,7 +44,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:theme="@style/AppTheme" android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar" />
     </application>
 
 </manifest>
