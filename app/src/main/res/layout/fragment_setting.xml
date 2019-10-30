@@ -5,28 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-        <LinearLayout
+        <RelativeLayout
             android:background="@color/colorBackground"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="vertical">
-            <ImageView
-                android:layout_marginTop="45dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/ibytes"/>
             <TextView
                 android:id="@+id/username"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:text="Wiliam Snoe"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="21sp"/>
-        </LinearLayout>
+        </RelativeLayout>
 
     <LinearLayout
         android:layout_width="360dp"
@@ -44,6 +39,7 @@
                 android:layout_height="36dp"
                 android:src="@drawable/message"/>
             <TextView
+                android:id="@+id/email"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
@@ -63,7 +59,7 @@
                 android:src="@drawable/ic_phone_android_black_24dp"/>
             <TextView
                 android:textStyle="bold"
-
+                android:id="@+id/phone"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

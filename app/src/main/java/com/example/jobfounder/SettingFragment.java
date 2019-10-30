@@ -34,7 +34,7 @@ public class SettingFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        final FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         db = FirebaseFirestore.getInstance();
         loadingScreen = new LoadingScreen(this.getActivity());
         final MainActivity mainActivity = (MainActivity) getActivity();
@@ -42,7 +42,8 @@ public class SettingFragment extends Fragment {
 
         loadingScreen.showDialog();
         final TextView username = (TextView) getView().findViewById(R.id.username);
-
+        final TextView email = (TextView) getView().findViewById(R.id.email);
+        final TextView phone = (TextView) getView().findViewById(R.id.phone);
         DocumentReference docRef = db.collection("users").document(currentUser.getUid());
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -57,6 +58,8 @@ public class SettingFragment extends Fragment {
                     return;
                 }
                 username.setText(document.getString("username"));
+                email.setText(document.getString("email"));
+                phone.setText(currentUser.getPhoneNumber());
                 loadingScreen.hideDialog();
                 mainActivity.showFragments();
             }

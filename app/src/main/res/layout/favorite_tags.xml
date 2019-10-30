@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/is_important"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:text="IMPORTANT"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"/>
+        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/is_optional"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:text="OPTIONAL"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/save_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="130dp"
+            android:text="Save"
+            />
+        <Button
+            android:id="@+id/cancel_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout>
+    </LinearLayout>

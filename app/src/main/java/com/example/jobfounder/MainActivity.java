@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         mAuth = FirebaseAuth.getInstance();
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new SearchFragment()).commit();
         bottomNav.setOnNavigationItemSelectedListener(navListener);
     }
 
@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment selectedFragment = null;
             switch (item.getItemId()) {
-                case R.id.nav_home:
-                    selectedFragment = new HomeFragment();
+                case R.id.nav_favorite:
+                    selectedFragment = new FavoriteFragment();
                     break;
                 case R.id.nav_search:
                     selectedFragment = new SearchFragment();

@@ -4,24 +4,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     android:transitionName="@string/transition_string"
     android:orientation="vertical"
     >
-
     <ImageView
-        android:id="@+id/image_activity2"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
-
+        android:layout_gravity="center"
+        android:id="@+id/image_url"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_height="200dp"
+        android:src="@drawable/job_logo"/>
     <TextView
-        android:id="@+id/text1_activity2"
+        android:id="@+id/job_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp" />
-
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:text="Studentische Mitarbeit - Test und Absicherung Fahrerassistenz, aktive Sicherheit und hochautomatisiertes Fahren"/>
     <TextView
-        android:id="@+id/text2_activity2"
+        android:id="@+id/job_land"
+        android:layout_width="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Sachsen"/>
+    <TextView
+        android:id="@+id/job_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp" />
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_marginBottom="10dp"
+        android:text="Studienplatz/ Werkstudent"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Subject area:" />
+        <TextView
+            android:id="@+id/subject_area"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Wiliam@gmail.com"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Email:" />
+            <TextView
+                android:id="@+id/email"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Wiliam@gmail.com"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="City:" />
+        <TextView
+            android:id="@+id/city"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Wiliam@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Address:" />
+        <TextView
+            android:id="@+id/address"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Wiliam@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="PLZ:" />
+        <TextView
+            android:id="@+id/plz"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Wiliam@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Vacancy active by:" />
+        <TextView
+            android:id="@+id/active_by"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Wiliam@gmail.com"/>
+    </LinearLayout>
 </LinearLayout>

@@ -46,24 +46,37 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
-                    android:id="@+id/add_favorite"
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/important_tag"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    app:chipBackgroundColor="@color/important"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="ADD TO FAVORITE"
-                    android:textColor="@color/colorText"
-                    android:background="@drawable/circular_border_shape" />
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/share"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="important"/>
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:id="@+id/optional_tag"
+                    app:chipBackgroundColor="@color/success"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/important_tag"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="optional"/>
+                <Button
+                    android:id="@+id/add_tag"
                     android:layout_width="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_gravity="bottom|right"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    android:text="add tags"
+                    android:textAlignment="center"
                     app:tint="@color/colorText"
-                    app:srcCompat="@drawable/ic_share_black_24dp"/>
-
+                    />
             </RelativeLayout>
         </LinearLayout>
 

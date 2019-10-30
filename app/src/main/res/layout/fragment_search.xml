@@ -2,46 +2,86 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/gray"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorText"
     android:orientation="vertical"
     android:layout_height="match_parent">
-    t<com.google.android.material.appbar.MaterialToolbar
+    <com.google.android.material.appbar.MaterialToolbar
+        app:title="Jobs"
+        app:titleTextColor="@color/colorText"
     android:layout_width="match_parent"
     style="@style/NoActionBar"
+        android:background="@color/colorBackground"
     app:menu="@menu/search_menu"
     android:layout_height="?attr/actionBarSize"/>
     <LinearLayout
+        android:background="@color/colorBackground"
         android:id="@+id/filter_box"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jobs"
+            android:textColor="@color/colorText"
+            android:textSize="35dp"
+            android:text="Land"
             />
         <com.google.android.material.chip.ChipGroup
+            android:id="@+id/land_group"
+            app:chipSpacing="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Filter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="text"/>
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="test2"/>
-
 
         </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="35dp"
+            android:text="Profession"
+            />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/proffesion_group"
+            app:chipSpacing="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="35dp"
+            android:text="Type"
+            />
+        <com.google.android.material.chip.ChipGroup
+            app:chipSpacing="10dp"
+            android:id="@+id/type_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/filter_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorText"
+                android:shadowColor="@color/gray"
+                android:textColor="@color/colorBackground"
+                android:layout_centerInParent="true"
+                android:text="Search" />
+        </RelativeLayout>
+
     </LinearLayout>
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lv"
-        android:dividerHeight="10dp">
+
+        android:background="@color/gray"
+        android:dividerHeight="15dp">
     </ListView>
 </LinearLayout>
